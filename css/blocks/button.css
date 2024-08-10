@@ -6,4 +6,5 @@
     font-weight: 700;
     background-color: var(--main-color--dark);
     border-radius: var(--main-radius);
+    cursor: pointer;
 }
