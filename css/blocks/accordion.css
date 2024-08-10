@@ -1,0 +1,110 @@
+.accordion-list{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.accordion{
+    padding: clamp(29px, 0.511rem + 2.5vw, 48px) clamp(1rem, -0.096rem + 2.1vw, 2rem);
+    background-color: #FCFCFC;
+    border: 1px solid #F1F1F1;
+    border-radius: var(--main-radius);
+    cursor: pointer;
+}
+.accordion_open .accordion__body{
+    grid-template-rows: 1fr;
+}
+.accordion_open .accordion__body-auto{
+    height: auto;
+}
+.accordion__header{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center ;
+}
+.accordion__title{
+    font-size: clamp(18px, 0.166rem + 1.84vw, 32px);
+    font-weight: 700;
+}
+.accordion__icon{
+    flex: 0 0 clamp(32px, 0.356rem + 3.15vw, 56px);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #92C83E;
+    position: relative;
+    transition: transform .5s ease;
+}
+.accordion__icon-line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 70%;
+    height: 4.6px;
+    border-radius: 30px;
+    background-color: white;
+    transition: opacity .5s ease;
+}
+.accordion__icon-line:first-child{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.accordion__icon-line:last-child{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.accordion_open .accordion__icon{
+    transform: rotate(-45deg);
+}
+.accordion_open .accordion__icon-line:last-child{
+    opacity: 0;
+}
+.accordion__body{
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all .6s ease;
+}
+.accordion__body-auto{
+    min-height: 0;
+}
+.accordion__text{
+    margin-top: clamp(1rem, 0.452rem + 1.05vw, 1.5rem);
+    font-size: clamp(16px, 0.863rem + 0.26vw, 18px);
+}
+.section-quastions__container{
+    display: flex;
+    flex-direction: column;
+}
+.section-quastions__button{
+    display: none;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+@media screen and (min-width: 834px) {
+    .accordion__title{
+        font-size: clamp(1.125rem, 0.453rem + 1.29vw, 2rem);
+    }
+    .accordion__text{
+        font-size: clamp(1rem, 0.904rem + 0.18vw, 1.125rem);
+    }
+    .accordion__icon{
+        flex: 0 0 clamp(2rem, 0.848rem + 2.21vw, 3.5rem);
+    }
+}
+@media screen and (max-width: 834px) {
+    .accordion__title{
+        font-size: clamp(1rem, 0.922rem + 0.39vw, 1.125rem);
+    }
+    .accordion__text{
+        font-size: clamp(0.875rem, 0.797rem + 0.39vw, 1rem);
+    }
+    .accordion{
+        padding: clamp(1rem, 0.377rem + 3.11vw, 2rem);
+    }
+    .accordion__icon{
+        flex: 0 0 clamp(1.5rem, 1.189rem + 1.56vw, 2rem);
+    }
+    .section-quastions__button{
+        display: block;
+    }
+}

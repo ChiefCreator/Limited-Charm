@@ -1,0 +1,11 @@
+.section-order-steps__description{
+    max-width: 1044px;
+}
+@media (max-width: 835px) {
+    .section-order-steps__title{
+        max-width: 449px;
+    }
+    .section-order-steps__description{
+        max-width: 495px;
+    }
+}

@@ -1,0 +1,22 @@
+.section-effects .item-list__description{
+    line-height: clamp(17px, 0.891rem + 0.33vw, 19.5px);
+}
+.section-effects__section-blocks{
+    align-items: start;
+}
+.section-effects__section-blocks .section-blocks__img-wrapper{
+    height: auto;
+}
+.section-effects__section-blocks .section-blocks__img-wrapper img{
+    min-height: 478px;
+}
+@media (max-width: 1000px) {
+    .section-effects__section-blocks{
+        align-items: center;
+    }
+}
+@media (max-width: 834px) {
+    .section-effects__section-blocks .section-blocks__img-wrapper img{
+        min-height: auto;
+    }
+}

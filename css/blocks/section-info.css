@@ -1,0 +1,25 @@
+.section-info__description{
+    max-width: 1093px;
+}
+.section-info__block-order{
+    margin-top: clamp(56px, 1.856rem + 3.15vw, 80px);
+}
+.section-info__block-order .block-order__description{
+   max-width: 638px;
+}
+
+@media (max-width: 800px) {
+    .item-list__description{
+        font-size: clamp(14px, 0.792rem + 0.42vw, 16px);
+        max-width: 500px;
+    }
+    .item-list__title{
+        font-size: clamp(16px, 0.75rem + 1.25vw, 22px);
+        font-weight: 700;
+    }
+}
+@media (max-width: 600px) {
+    .block-order__bg-img-wrapper{
+        display: none;
+    }
+}

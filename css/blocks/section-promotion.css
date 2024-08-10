@@ -1,0 +1,23 @@
+
+@media (max-width: 835px) {
+    .section-promotion__title{
+        max-width: 407px;
+    }
+    .section-promotion .list{
+        gap: 32px;
+    }
+    .section-promotion .item-list__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }   
+    .section-promotion .item-list__icon-wrapper{
+        width: clamp(56px, 1.856rem + 3.15vw, 80px);
+    }
+}
+@media (max-width: 834px) {
+    .section-promotion .section-blocks{
+        gap: 32px !important;
+    }
+}

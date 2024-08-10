@@ -1,0 +1,12 @@
+.section-problems__description{
+    max-width: 913px;
+}
+
+@media (max-width: 835px) {
+    .section-problems__description{
+        max-width: 596px;
+    }
+    .section-problems__description br{
+        display: none;
+    }
+}
