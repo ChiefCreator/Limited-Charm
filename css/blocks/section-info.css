@@ -8,6 +8,11 @@
    max-width: 638px;
 }
 
+@media (max-width: 834px) {
+    .section-info .section-blocks{
+        gap: 32px;
+    }
+}
 @media (max-width: 800px) {
     .item-list__description{
         font-size: clamp(14px, 0.792rem + 0.42vw, 16px);

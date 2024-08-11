@@ -15,6 +15,11 @@
         align-items: center;
     }
 }
+@media (max-width: 835px) {
+    .section-effects__title{
+        max-width: 404px;
+    }
+}
 @media (max-width: 834px) {
     .section-effects__section-blocks .section-blocks__img-wrapper img{
         min-height: auto;

@@ -1,5 +1,5 @@
 .block-order{
-    margin-top: 50px;
+    margin-top: clamp(56px, 1.856rem + 3.15vw, 80px);
     border: 2px solid var(--main-color);
     border-radius: var(--main-radius);
     overflow: hidden;
